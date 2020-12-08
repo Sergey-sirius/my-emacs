@@ -1,4 +1,5 @@
 EMACS
+Знаниями нужно делиться, иначе они протухают.
 
 * Окна
 Еще до возникновения оконных сред Microsoft и Apple разработчики Emacs разработали и приняли понятие - фрейм. 
@@ -47,6 +48,43 @@ EMACS
 (ergoemacs-mode 1)
 ;;-------------------
 
+- Клава скриншот 
+https://ergoemacs.github.io/
+
+- Темы
+https://www.emacswiki.org/emacs/Brutalist_Theme
+http://ergoemacs.org/emacs/emacs_playing_with_color_theme.html
+
+- Emacs для Python
+https://dunmaksim.blogspot.com/2015/10/emacs-python.html
+https://dunmaksim.blogspot.com/2018/02/elpy-python-mode-use-package.html
+
+
+- переключение раскладки, хоткей теряются 
+http://reangdblog.blogspot.com/2015/05/emacs.html
+
+- EMACS: автоустановка пакетов и хоткеи в русской раскладке
+https://dunmaksim.blogspot.com/2015/09/emacs.html
+
+- Красивый способ хранения настроек Emacs
+https://dunmaksim.blogspot.com/2017/12/emacs.html
+
+- Организация информации — Emacs Org Mode
+https://habr.com/ru/post/28098/
+
+- ORG MODE  мануал
+https://orgmode.org/manual/index.html
+https://orgmode.org/features.html
+
+
+- Учет затраченного времени с Emacs и org-mode
+https://habr.com/ru/post/63424/
+
+- Введение в org-mode emacs
+https://habr.com/ru/post/105300/
+
+- Рахим 
+https://github.com/freetonik/emacs-dotfiles
 
 
 =============================================================================================
@@ -58,6 +96,8 @@ https://dunmaksim.blogspot.com/2015/05/emacs.html
 
 ;; Конфиг Бушенко
 ;; https://github.com/dbushenko/emacs-config
+;; видео https://www.youtube.com/watch?v=0K1MI10iFBM&list=PLECBtie1W1tGlrbDDBvcxnttRR4IA5qZn&index=2
+
 
 ;; Инициализация ErgoEmacs в .emacs
 (setenv "ERGOEMACS_KEYBOARD_LAYOUT" "us") ; US
