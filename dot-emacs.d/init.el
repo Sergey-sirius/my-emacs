@@ -1,3 +1,42 @@
+;;===============================
+;; Inhibit startup/splash screen
+(setq inhibit-splash-screen   t)
+(setq ingibit-startup-message t) ;; экран приветствия можно вызвать комбинацией C-h C-
+;;--------------------------------
+
+;;=======================
+;; Выделим выражения между {},[],(), когда курсор находится на одной из скобок
+(show-paren-mode t) ;; включить выделение выражений между {},[],()
+(setq show-paren-style 'expression) ;; выделить цветом выражения между {},[],()
+;;--------------------------------------
+
+;;=============================
+;; Electric-modes settings
+(electric-pair-mode    1) ;; автозакрытие {},[],() с переводом курсора внутрь скобок
+(electric-indent-mode -1) ;; отключить индентацию  electric-indent-mod'ом (default in Emacs-24.4)
+(delete-selection-mode t) ;; Delete selection
+(setq display-time-24hr-format t) ;; 24-часовой временной формат в mode-line
+(display-time-mode             t) ;; показывать часы в mode-line
+(size-indication-mode          t) ;; размер файла в %-ах
+;;--------------------------------
+
+;;======================  Indent settings
+(setq-default indent-tabs-mode nil) ;; отключить возможность ставить отступы TAB'ом
+(setq-default tab-width          4) ;; ширина табуляции - 4 пробельных символа
+(setq-default c-basic-offset     4)
+(setq-default standart-indent    4) ;; стандартная ширина отступа - 4 пробельных символа
+(setq-default lisp-body-indent   4) ;; сдвигать Lisp-выражения на 4 пробельных символа
+(global-set-key (kbd "RET") 'newline-and-indent) ;; при нажатии Enter перевести каретку и сделать отступ
+(setq lisp-indent-function  'common-lisp-indent-function)
+;; ------------------------------------------------------
+
+;;=================  System-type definition
+(defun system-is-linux()
+    (string-equal system-type "gnu/linux"))
+(defun system-is-windows()
+    (string-equal system-type "windows-nt"))
+;;-------------------------------------------
+
 ;; =================
 ;; Прописываем ErgoEmacs MODE
 (package-initialize)
